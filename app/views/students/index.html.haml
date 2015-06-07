@@ -1,2 +1,6 @@
-%h1 Students#index
-%p Find me in app/views/students/index.html.erb
+
+%h1 Physical Presence
+%select#students
+  - @students.each do |student|
+    %option #{student.first_name} #{student.last_name}
+%button In Seat
